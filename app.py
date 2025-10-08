@@ -95,7 +95,7 @@ def main():
     col1, col2 = st.columns([3, 2])
     
     with col1:
-        st.header("📁 Upload Python Files")
+        st.header("📁 Upload Python/Java Files")
         
         # File upload section
         uploaded_files = st.file_uploader(

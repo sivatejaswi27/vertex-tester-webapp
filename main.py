@@ -17,6 +17,17 @@ import shutil
 import tiktoken
 from google import genai
 from google.genai import types
+from google.cloud import aiplatform
+
+def init_vertex_ai():
+    project = "ascendant-lore-466708-p3"
+    location = "us-central1"
+    if project and location:
+        aiplatform.init(project=project, location=location)
+    else:
+        aiplatform.init()
+
+init_vertex_ai()
 
 # Handle javalang import gracefully
 try:

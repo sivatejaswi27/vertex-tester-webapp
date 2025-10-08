@@ -1,6 +1,3 @@
-# **Updated README.md with Corrected File Names**
-
-```markdown
 # 🧪 Vertex Tester - Web Application
 
 Multi-language AI-powered unit test generation web application that leverages Google Gemini to create comprehensive test cases for your Python and Java codebases.
@@ -549,4 +546,3 @@ streamlit run app.py
 </div>
 ```
 
----
