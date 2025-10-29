@@ -89,13 +89,14 @@ def main():
     configure_sidebar()
 
     # Hidden API key (secure)
-    api_key = "AQ.Ab8RN6KAMuExsK5BuaC48qHaoWUCn6AB3i7sJwxi4rbT0QjA8w"
+    
+    api_key = "AQ.Ab8RN6LFw23y-ooAHrtL3lCEvwImVBnABTXhyH_Me6P4lfiaig"
     
     # Main content area
     col1, col2 = st.columns([3, 2])
     
     with col1:
-        st.header("📁 Upload Python Files")
+        st.header("📁 Upload Python/Java Files")
         
         # File upload section
         uploaded_files = st.file_uploader(
@@ -166,20 +167,20 @@ def main():
                         process_files(uploaded_files, api_key)
         else:
             # Show sample when no files uploaded
-            st.markdown('<div class="info-box">👆 <strong>Upload Python files above to get started!</strong><br>Supported: .py files with functions and classes</div>', unsafe_allow_html=True)
+            st.markdown('<div class="info-box">👆 <strong>Upload Python/Java files above to get started!</strong><br>Supported: .py files with functions and classes</div>', unsafe_allow_html=True)
     
     with col2:
         st.header("ℹ️ How It Works")
         
         # Process steps
         st.markdown("**1. 📤 Upload**")
-        st.write("Select Python files from your project")
+        st.write("Select Python/Java files from your project")
 
         st.markdown("**2. 🔍 Analyze**") 
         st.write("AI analyzes your code structure and functions")
 
         st.markdown("**3. ⚡ Generate**")
-        st.write("Creates comprehensive pytest-based tests")
+        st.write("Creates comprehensive pytest-based/JUnit-based tests")
 
         st.markdown("**4. 📥 Download**")
         st.write("Get your complete test files")
